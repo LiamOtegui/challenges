@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const recommendationSchema = mongoose.Schema(
     {
@@ -26,8 +26,8 @@ const recommendationSchema = mongoose.Schema(
     {
         timestamps: true
     }
-)
+);
 
-const Recommendation = mongoose.model('Recommendation', recommendationSchema)
+const Recommendation = mongoose.model('Recommendation', recommendationSchema);
 
-module.exports = Recommendation
+module.exports = Recommendation;
