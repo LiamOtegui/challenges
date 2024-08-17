@@ -1,13 +1,10 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const recommendationSchema = mongoose.Schema(
     {
-        username: {
-            type: String,
-            required: true
-        },
-        password: {
-            type: String,
+        user: {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'User',
             required: true
         },
         recommendations: [
@@ -30,8 +27,8 @@ const recommendationSchema = mongoose.Schema(
     {
         timestamps: true
     }
-)
+);
 
-const Recommendation = mongoose.model('Recommendation', recommendationSchema)
+const Recommendation = mongoose.model('Recommendation', recommendationSchema);
 
-module.exports = Recommendation
+module.exports = Recommendation;
