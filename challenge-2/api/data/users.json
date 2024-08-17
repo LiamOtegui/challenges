@@ -1,0 +1,92 @@
+[
+    {
+        "username": "user1",
+        "preferences": {
+            "high_protein": true,
+            "high_carbs": false,
+            "high_fat": true,
+            "glutenFree": false
+        }
+    },
+    {
+        "username": "user2",
+        "preferences": {
+            "high_protein": false,
+            "high_carbs": true,
+            "high_fat": false,
+            "glutenFree": true
+        }
+    },
+    {
+        "username": "user3",
+        "preferences": {
+            "high_protein": true,
+            "high_carbs": true,
+            "high_fat": false,
+            "glutenFree": false
+        }
+    },
+    {
+        "username": "user4",
+        "preferences": {
+            "high_protein": false,
+            "high_carbs": false,
+            "high_fat": true,
+            "glutenFree": true
+        }
+    },
+    {
+        "username": "user5",
+        "preferences": {
+            "high_protein": true,
+            "high_carbs": false,
+            "high_fat": true,
+            "glutenFree": true
+        }
+    },
+    {
+        "username": "user6",
+        "preferences": {
+            "high_protein": false,
+            "high_carbs": true,
+            "high_fat": false,
+            "glutenFree": false
+        }
+    },
+    {
+        "username": "user7",
+        "preferences": {
+            "high_protein": true,
+            "high_carbs": true,
+            "high_fat": true,
+            "glutenFree": false
+        }
+    },
+    {
+        "username": "user8",
+        "preferences": {
+            "high_protein": false,
+            "high_carbs": false,
+            "high_fat": false,
+            "glutenFree": true
+        }
+    },
+    {
+        "username": "user9",
+        "preferences": {
+            "high_protein": true,
+            "high_carbs": true,
+            "high_fat": false,
+            "glutenFree": true
+        }
+    },
+    {
+        "username": "user10",
+        "preferences": {
+            "high_protein": false,
+            "high_carbs": false,
+            "high_fat": true,
+            "glutenFree": false
+        }
+    }
+]
