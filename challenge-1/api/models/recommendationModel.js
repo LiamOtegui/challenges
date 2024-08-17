@@ -15,7 +15,12 @@ const recommendationSchema = mongoose.Schema(
                 avoid_foods: {
                     type: [String],
                     required: false
-                }
+                },
+                images: {
+                    type: [String],
+                    required: false
+                },
+                _id: false
             }
         ]
     },
