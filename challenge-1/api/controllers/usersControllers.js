@@ -46,7 +46,7 @@ const logoutUser = asyncHandler(async (req, res) => {
         if (err) {
             return res.status(500).json({ error: 'Failed to logout' });
         }
-        res.clearCookie('connect.sid'); // Esto es para limpiar la cookie de la sesion
+        res.clearCookie('connect.sid'); // Puse esto para limpiar la cookie de la sesion.
         res.json({ message: 'Logged out successfully' });
     });
 });
