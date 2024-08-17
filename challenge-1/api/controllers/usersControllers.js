@@ -31,7 +31,6 @@ const authenticateUser = asyncHandler(async (req, res) => {
             recommendationId: user.recommendationId
         };
 
-        console.log('Session cookie:', req.sessionID);
         res.json({
             message: 'Logged in!',
             recommendationId: user.recommendationId
