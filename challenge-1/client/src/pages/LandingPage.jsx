@@ -16,7 +16,7 @@ const LandingPage = () => {
             const response = await axios.post('http://localhost:5000/users/login', {
                 username,
                 password,
-            });
+            }, { withCredentials: true });
 
             const recommendationId = response.data.recommendationId;
 
@@ -29,9 +29,6 @@ const LandingPage = () => {
             toast.error(error.message);
         }
     };
-
-    console.log(username);
-    console.log(password);    
 
     return (
         <div className="flex justify-center items-center min-h-screen">
