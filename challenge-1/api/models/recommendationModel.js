@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 
 const recommendationSchema = mongoose.Schema(
     {
-        user_id: {
-            type: Number,
-            required: true
-        },
         recommendations: [
             {
                 nutrient: {
