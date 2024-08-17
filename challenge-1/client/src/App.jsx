@@ -9,6 +9,10 @@ function App() {
 
   return (
     <>
+      <nav className='mb-3'>
+        Gundo App!
+      </nav>
+
       <Routes>
         <Route index element={<LandingPage />} />
         <Route path='/home/:recommendationId' element={<HomePage />} />

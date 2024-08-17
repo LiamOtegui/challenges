@@ -21,7 +21,7 @@ const LandingPage = () => {
             const recommendationId = response.data.recommendationId;
 
             if (recommendationId) {
-                navigate(`/HomePage/${recommendationId}`);
+                navigate(`/home/${recommendationId}`);
             } else {
                 toast.error('Invalid username or password');
             }
