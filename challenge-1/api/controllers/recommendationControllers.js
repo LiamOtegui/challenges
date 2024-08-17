@@ -27,6 +27,23 @@ const getRecommendations = asyncHandler(async (req, res) => {
     }
 })
 
+const getRecommendationById = asyncHandler(async (req, res) => {
+    try {
+        const { id } = req.params
+        const recommendation = await Recommendation.findById(id)
+
+        if (!recommendation) {
+            res.status(404)
+            throw new Error('Recommendation not found')
+        }
+
+        res.json(recommendation)
+    } catch (error) {
+        res.status(500)
+        throw new Error(error.message)
+    }
+})
+
 const updateRecommendation = asyncHandler(async (req, res) => {
     try {
         const { id } = req.params
@@ -64,6 +81,7 @@ const deleteRecommendation = asyncHandler(async (req, res) => {
 module.exports = {
     postRecommendation,
     getRecommendations,
+    getRecommendationById,
     updateRecommendation,
     deleteRecommendation
 }

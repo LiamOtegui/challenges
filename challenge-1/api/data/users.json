@@ -1,10 +1,12 @@
 [
     {
         "username": "john_doe",
-        "password": "johnwick"
+        "password": "johnwick",
+        "recommendationId": "66c0baa3a1526eb1715fb8bd"
     },
     {
         "username": "jane_doe",
-        "password": "maryjane"
+        "password": "maryjane",
+        "recommendationId": "66c0bedda1526eb1715fb8bf"
     }
 ]
