@@ -2,12 +2,8 @@ const mongoose = require('mongoose')
 
 const recommendationSchema = mongoose.Schema(
     {
-        username: {
-            type: String,
-            required: true
-        },
-        password: {
-            type: String,
+        user_id: {
+            type: Number,
             required: true
         },
         recommendations: [
