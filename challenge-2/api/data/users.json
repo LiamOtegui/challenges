@@ -67,7 +67,7 @@
         "preferences": {
             "high_protein": false,
             "high_carbs": false,
-            "high_fat": false,
+            "high_fat": true,
             "glutenFree": true
         }
     },
