@@ -4,7 +4,7 @@ const productSchema = new mongoose.Schema({
     name: String,
     macronutrients: {
         protein: Number,
-        carbs: Number,
+        carbohydrates: Number,
         fat: Number
     },
     glutenFree: Boolean
