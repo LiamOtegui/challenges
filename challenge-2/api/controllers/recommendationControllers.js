@@ -3,13 +3,13 @@ const products = require('../data/products.json');
 const users = require('../data/users.json');
 
 const getRecommendedProducts = asyncHandler(async (req, res) => {
-    const { user_id } = req.body;
+    const { user_id, glutenFreeOnly } = req.body;
 
     const user = users.find((user) => user._id === user_id);
 
     if (!user) {
         res.status(404);
-        throw new Error('User not found');
+        throw new Error('User not found!');
     }
 
     const { high_protein, high_carbs, high_fat, glutenFree } = user.preferences;
@@ -31,9 +31,13 @@ const getRecommendedProducts = asyncHandler(async (req, res) => {
         return matches;
     });
 
+    if (glutenFreeOnly) {
+        recommendedProducts = recommendedProducts.filter((product) => product.glutenFree)
+    }
+
     if (recommendedProducts.length === 0) {
         res.status(404);
-        throw new Error('No products found matching preferences');
+        throw new Error('No products were found matching the preferences');
     }
 
     // Limitar a 3 productos
