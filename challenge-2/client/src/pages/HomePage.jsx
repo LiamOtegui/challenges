@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify'
 import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
   const location = useLocation();
@@ -10,6 +11,8 @@ const HomePage = () => {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [filterGlutenFree, setFilterGlutenFree] = useState(null);
+
+  const navigate = useNavigate()
 
   const getAllProducts = async () => {
     try {
@@ -30,6 +33,10 @@ const HomePage = () => {
     }
   }
 
+  const logOut = () => {
+    navigate('/')
+  }
+
   useEffect(() => {
     getAllProducts();
   }, [])
@@ -46,6 +53,11 @@ const HomePage = () => {
               <div className="text-2xl text-orange-500 font-bold px-6 py-4 justify-center items-center flex mb-3 mt-3 bg-white rounded-full ml-7">
                 Your Recommended Products:
               </div>
+              <button
+              className='mt-5 ml-5 bg-orange-600 rounded-md text-white font-bold p-3 self-start hover:bg-white hover:text-orange-600 transition duration-100'
+              onClick={() => logOut()}>
+              Logout
+            </button>
             </div>
             <div className="flex flex-col mt-4 mb-6 space-y-5">
               {recommendedProductsResponse.map((product, index) => (
