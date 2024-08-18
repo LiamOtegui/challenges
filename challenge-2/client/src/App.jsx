@@ -9,10 +9,10 @@ import UserAuth from './pages/UserAuth';
 function App() {
 
   return (
-    <div>
+    <div style={{ backgroundImage: "url('/food-wallpaper.jpg')" }}>
       <Routes>
         <Route index element={<UserAuth />} />
-        <Route path='/:username' element={<HomePage />}/>
+        <Route path='/:username' element={<HomePage />} />
       </Routes>
 
       <ToastContainer />

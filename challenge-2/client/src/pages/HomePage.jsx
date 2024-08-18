@@ -2,12 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify'
 import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
   const location = useLocation();
   const { username, recommendedProductsResponse } = location.state || {};
-  const navigate = useNavigate();
 
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
@@ -45,7 +43,7 @@ const HomePage = () => {
               <h1 className="text-4xl font-bold text-orange-500 inline-block bg-white rounded-full px-5 pt-5 pb-6 shadow-md">
                 Welcome {username}!
               </h1>
-              <div className="text-2xl text-white font-bold mt-6 mb-3 pl-8 underline">
+              <div className="text-2xl text-orange-500 font-bold px-6 py-4 justify-center items-center flex mb-3 mt-3 bg-white rounded-full ml-7">
                 Your Recommended Products:
               </div>
             </div>
@@ -69,6 +67,9 @@ const HomePage = () => {
           <div className="w-full md:w-2/5 ml-16">
             <h2 className="text-xl font-semibold text-white">You can see all the products here!</h2>
             <div className="mt-2 flex space-x-2">
+              <div className="text-md font-bold text-orange-500 inline-block bg-white rounded-md py-2 px-3 shadow-md">
+                Filters:
+              </div>
               <button
                 onClick={() => handleFilterChange(null)}
                 className={`px-4 py-2 rounded mr-2 ${filterGlutenFree === null ? 'bg-orange-700 text-white' : 'bg-orange-600 text-white'}`}
