@@ -3,7 +3,7 @@ const products = require('../data/products.json');
 const users = require('../data/users.json');
 
 const getRecommendedProducts = asyncHandler(async (req, res) => {
-    const { username } = req.body;
+    const { username } = req.params;
 
     const user = users.find((user) => user.username === username);
 
@@ -62,8 +62,4 @@ const getRecommendedProducts = asyncHandler(async (req, res) => {
     res.json({ username, recommendedProductsResponse });
 });
 
-const getAllProducts = asyncHandler(async (req, res) => {
-    res.json(products)
-})
-
-module.exports = { getRecommendedProducts, getAllProducts };
+module.exports = { getRecommendedProducts };
