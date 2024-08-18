@@ -1,32 +1,317 @@
 [
-    { "name": "Chicken Breast", "macronutrients": { "protein": 31, "carbohydrates": 0, "fat": 3.6 }, "glutenFree": true },
-    { "name": "Lentils", "macronutrients": { "protein": 9, "carbohydrates": 20, "fat": 0.4 }, "glutenFree": true },
-    { "name": "Greek Yogurt", "macronutrients": { "protein": 10, "carbohydrates": 4, "fat": 0.4 }, "glutenFree": true },
-    { "name": "Almonds", "macronutrients": { "protein": 21, "carbohydrates": 22, "fat": 49 }, "glutenFree": true },
-    { "name": "Quinoa", "macronutrients": { "protein": 4.1, "carbohydrates": 21, "fat": 1.9 }, "glutenFree": true },
-    { "name": "Salmon", "macronutrients": { "protein": 25, "carbohydrates": 0, "fat": 13 }, "glutenFree": true },
-    { "name": "Eggs", "macronutrients": { "protein": 13, "carbohydrates": 1.1, "fat": 11 }, "glutenFree": true },
-    { "name": "Spinach", "macronutrients": { "protein": 2.9, "carbohydrates": 3.6, "fat": 0.4 }, "glutenFree": true },
-    { "name": "Tuna", "macronutrients": { "protein": 23, "carbohydrates": 0, "fat": 1 }, "glutenFree": true },
-    { "name": "Chia Seeds", "macronutrients": { "protein": 16, "carbohydrates": 42, "fat": 31 }, "glutenFree": true },
-    { "name": "Turkey Breast", "macronutrients": { "protein": 29, "carbohydrates": 0, "fat": 1 }, "glutenFree": true },
-    { "name": "Cottage Cheese", "macronutrients": { "protein": 11, "carbohydrates": 3.4, "fat": 1.2 }, "glutenFree": true },
-    { "name": "Black Beans", "macronutrients": { "protein": 8.9, "carbohydrates": 23, "fat": 0.5 }, "glutenFree": true },
-    { "name": "Hemp Seeds", "macronutrients": { "protein": 33, "carbohydrates": 6, "fat": 45 }, "glutenFree": true },
-    { "name": "Edamame", "macronutrients": { "protein": 11, "carbohydrates": 8, "fat": 5 }, "glutenFree": true },
-    { "name": "Pumpkin Seeds", "macronutrients": { "protein": 19, "carbohydrates": 54, "fat": 19 }, "glutenFree": true },
-    { "name": "Tofu", "macronutrients": { "protein": 8, "carbohydrates": 1.9, "fat": 4.8 }, "glutenFree": true },
-    { "name": "Brussels Sprouts", "macronutrients": { "protein": 3.4, "carbohydrates": 9, "fat": 0.3 }, "glutenFree": true },
-    { "name": "Beef Steak", "macronutrients": { "protein": 26, "carbohydrates": 0, "fat": 19 }, "glutenFree": true },
-    { "name": "Oats", "macronutrients": { "protein": 13, "carbohydrates": 66, "fat": 6.9 }, "glutenFree": false },
-    { "name": "Peanut Butter", "macronutrients": { "protein": 25, "carbohydrates": 20, "fat": 50 }, "glutenFree": true },
-    { "name": "Sweet Potatoes", "macronutrients": { "protein": 2, "carbohydrates": 20, "fat": 0.1 }, "glutenFree": true },
-    { "name": "Greek Yogurt", "macronutrients": { "protein": 10, "carbohydrates": 4, "fat": 0.4 }, "glutenFree": true },
-    { "name": "Pistachios", "macronutrients": { "protein": 20, "carbohydrates": 28, "fat": 45 }, "glutenFree": true },
-    { "name": "Cucumber", "macronutrients": { "protein": 0.7, "carbohydrates": 3.6, "fat": 0.1 }, "glutenFree": true },
-    { "name": "Chickpeas", "macronutrients": { "protein": 8.9, "carbohydrates": 27, "fat": 2.6 }, "glutenFree": true },
-    { "name": "Avocado", "macronutrients": { "protein": 2, "carbohydrates": 9, "fat": 15 }, "glutenFree": true },
-    { "name": "Tomato", "macronutrients": { "protein": 0.9, "carbohydrates": 3.9, "fat": 0.2 }, "glutenFree": true },
-    { "name": "Zucchini", "macronutrients": { "protein": 1.2, "carbohydrates": 3.1, "fat": 0.3 }, "glutenFree": true },
-    { "name": "Cauliflower", "macronutrients": { "protein": 1.9, "carbohydrates": 5, "fat": 0.3 }, "glutenFree": true }
+    {
+        "name": "Chicken Breast",
+        "macronutrients": {
+            "protein": 30,
+            "carbohydrates": 0,
+            "fat": 3
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Quinoa",
+        "macronutrients": {
+            "protein": 8,
+            "carbohydrates": 39,
+            "fat": 4
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Greek Yogurt",
+        "macronutrients": {
+            "protein": 10,
+            "carbohydrates": 4,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Lentils",
+        "macronutrients": {
+            "protein": 9,
+            "carbohydrates": 20,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Almonds",
+        "macronutrients": {
+            "protein": 21,
+            "carbohydrates": 22,
+            "fat": 49
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Salmon",
+        "macronutrients": {
+            "protein": 25,
+            "carbohydrates": 0,
+            "fat": 13
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Spinach",
+        "macronutrients": {
+            "protein": 3,
+            "carbohydrates": 1,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Sweet Potatoes",
+        "macronutrients": {
+            "protein": 2,
+            "carbohydrates": 20,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Tofu",
+        "macronutrients": {
+            "protein": 8,
+            "carbohydrates": 2,
+            "fat": 5
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Broccoli",
+        "macronutrients": {
+            "protein": 3,
+            "carbohydrates": 7,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Oats",
+        "macronutrients": {
+            "protein": 17,
+            "carbohydrates": 66,
+            "fat": 7
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Pasta",
+        "macronutrients": {
+            "protein": 5,
+            "carbohydrates": 31,
+            "fat": 1
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Bread",
+        "macronutrients": {
+            "protein": 9,
+            "carbohydrates": 49,
+            "fat": 1
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Cookies",
+        "macronutrients": {
+            "protein": 4,
+            "carbohydrates": 62,
+            "fat": 25
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Chickpeas",
+        "macronutrients": {
+            "protein": 9,
+            "carbohydrates": 27,
+            "fat": 3
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Pumpkin Seeds",
+        "macronutrients": {
+            "protein": 30,
+            "carbohydrates": 10,
+            "fat": 14
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Beef Steak",
+        "macronutrients": {
+            "protein": 26,
+            "carbohydrates": 0,
+            "fat": 22
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Pineapple",
+        "macronutrients": {
+            "protein": 1,
+            "carbohydrates": 13,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Sunflower Seeds",
+        "macronutrients": {
+            "protein": 21,
+            "carbohydrates": 20,
+            "fat": 51
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Shrimp",
+        "macronutrients": {
+            "protein": 24,
+            "carbohydrates": 0,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Turkey Breast",
+        "macronutrients": {
+            "protein": 30,
+            "carbohydrates": 0,
+            "fat": 1
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Apples",
+        "macronutrients": {
+            "protein": 0,
+            "carbohydrates": 14,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Zucchini",
+        "macronutrients": {
+            "protein": 1,
+            "carbohydrates": 3,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Hemp Seeds",
+        "macronutrients": {
+            "protein": 25,
+            "carbohydrates": 8,
+            "fat": 35
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Chia Pudding",
+        "macronutrients": {
+            "protein": 5,
+            "carbohydrates": 10,
+            "fat": 12
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Ginger",
+        "macronutrients": {
+            "protein": 1,
+            "carbohydrates": 18,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Tuna",
+        "macronutrients": {
+            "protein": 25,
+            "carbohydrates": 0,
+            "fat": 1
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Berries",
+        "macronutrients": {
+            "protein": 1,
+            "carbohydrates": 14,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Wheat Flour",
+        "macronutrients": {
+            "protein": 10,
+            "carbohydrates": 76,
+            "fat": 1
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Bagels",
+        "macronutrients": {
+            "protein": 9,
+            "carbohydrates": 56,
+            "fat": 1
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Crackers",
+        "macronutrients": {
+            "protein": 6,
+            "carbohydrates": 70,
+            "fat": 10
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Granola Bars",
+        "macronutrients": {
+            "protein": 7,
+            "carbohydrates": 55,
+            "fat": 8
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Rice",
+        "macronutrients": {
+            "protein": 7,
+            "carbohydrates": 80,
+            "fat": 0
+        },
+        "glutenFree": true
+    },
+    {
+        "name": "Couscous",
+        "macronutrients": {
+            "protein": 6,
+            "carbohydrates": 36,
+            "fat": 0
+        },
+        "glutenFree": false
+    },
+    {
+        "name": "Soy Milk",
+        "macronutrients": {
+            "protein": 3,
+            "carbohydrates": 6,
+            "fat": 1
+        },
+        "glutenFree": true
+    }
 ]
