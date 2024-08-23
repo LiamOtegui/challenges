@@ -1,3 +1,5 @@
+# CHALLENGES GUNDO:
+En 48 horas tuve que desarrollar 2 proyectos para una empresa llamada Gundo.
 
 # CHALLENGE-1
 # Gundo App
